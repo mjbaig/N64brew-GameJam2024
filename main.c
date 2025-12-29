@@ -29,7 +29,6 @@ int main()
     	debug_init_isviewer();
     	debug_init_usblog();
     #endif
-    debug_init_isviewer();
     
     // Initialize most subsystems
     asset_init_compression(2);
@@ -60,7 +59,7 @@ int main()
 
     // Show logos
     if (sys_reset_type() == RESET_COLD) {
-    //    n64brew_logo();
+       n64brew_logo();
        libdragon_logo();
     }
 
